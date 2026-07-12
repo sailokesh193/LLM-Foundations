@@ -1,0 +1,23 @@
+[project]
+name = "tokenisation-lab"
+version = "1.0.0"
+description = "Learn how LLM tokenizers work — from text to token IDs to generation"
+requires-python = ">=3.11"
+authors = [{name = "Your Name"}]
+dependencies = [
+    "torch>=2.4.0",
+    "transformers>=4.45.0",
+    "tokenizers>=0.15.0",
+    "jupyter>=1.0.0",
+    "ipykernel>=6.29.0",
+    "pandas>=2.1.0",
+    "matplotlib>=3.8.0",
+    "huggingface-hub[hf_xet]>=0.21.0",
+]
+
+[project.optional-dependencies]
+gpu = ["torch[cuda12]>=2.4.0"]
+cuda = ["accelerate>=0.27.0"]
+
+[tool.uv]
+python-version = "3.11"
